@@ -12,13 +12,12 @@ From the converted SQL database, I made additional queries.
 
 1. I created an ERD (Entity Relationship Diagram) using QuickDBD (https://www.quickdatabasediagrams.com/) to visually indicate 
 the table relationships and data constraints. <br>
-QuickDBD required simple text to create the diagram (quickdbd-schema.txt). I then exported the diagram into a PNG image file (QuickDBD-Employee-Diagram.png).
+- QuickDBD required simple text to create the diagram (quickdbd-schema.txt). 
+- I then exported the diagram into a PNG image file (QuickDBD-Employee-Diagram.png).
 
-2. Using the ERD as a guide, I created a database schema in PostgreSQL via pgAdmin (schema.sql). <br>
-To complete the CSV-to-SQL conversion, I then imported each CSV into the each new SQL database table.
+2. Using the ERD as a guide, I created a database schema in PostgreSQL via pgAdmin (schema.sql). To complete the CSV-to-SQL conversion, I then imported each CSV into the each new SQL database table.
 
-3. With the new database, I was able to make several SQL queries to discover specific information about the company's employees, managers, and departments. <br>
-The queries included table joins, department groupings, filtering, counts, and subqueries (query.sql). 
+3. With the new database, I was able to make several SQL queries to discover specific information about the company's employees, managers, and departments. The queries included table joins, department groupings, filtering, counts, and subqueries (query.sql). 
 
 4. In addition to converting CSV files to a SQL database, I used SQL Alchemy to connect to the PostgreSQL database and manipulate the data using Python Pandas (salaries_by_title.ipynb).
 
