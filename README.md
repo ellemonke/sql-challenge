@@ -14,7 +14,7 @@ From the converted SQL database, I made additional queries.
 the table relationships and data constraints. <br>
 - QuickDBD required simple text as (quickdbd-schema.txt), then outputs the diagram to a PNG image (QuickDBD-Employee-Diagram.png).
 
-2. Using the ERD as a guide, I created a db schema in PostgreSQL via pgAdmin (schema.sql). To complete the CSV-to-SQL conversion, I then imported each CSV into the each new SQL db table.
+2. Using the ERD as a guide, I created a db schema in PostgreSQL via pgAdmin (schema.sql). To complete the conversion, I then imported each CSV into each new SQL db table.
 
 3. With the new db, I was able to make several SQL queries to discover specific information about the company's employees, managers, and departments. The queries included table joins, department groupings, filtering, counts, and subqueries (query.sql). 
 
