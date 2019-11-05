@@ -7,8 +7,8 @@ In this SQL challenge, we were given six sets of data in CSV files consisting of
 - Titles
 - Salaries
 
-I used a variety of SQL tools to diagram the table relationships and convert the data to SQL database tables. 
-From the converted SQL database, I made additional queries. 
+I used a variety of SQL tools to diagram the table relationships and convert the CSV data to SQL database tables. 
+From the converted SQL database, I made additional queries and analyses. 
 
 1. I created an ERD (Entity Relationship Diagram) using QuickDBD (https://www.quickdatabasediagrams.com/) to visually indicate 
 the table relationships and data constraints. <br>
