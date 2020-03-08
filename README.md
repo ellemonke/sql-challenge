@@ -1,4 +1,6 @@
 # sql-challenge
+**SQL (in PostgreSQL), SQLAlchemy, Python, Pandas, NumPy, Matplotlib**
+
 In this SQL challenge, we were given six sets of data in CSV files consisting of employee data.
 - Employees
 - Departments
