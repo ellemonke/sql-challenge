@@ -22,4 +22,6 @@ QuickDBD required simple text as ([quickdbd-schema.txt](quickdbd-schema.txt)), t
 
 4. I used SQL Alchemy to connect to the PostgreSQL db and manipulate the data using Python Pandas ([salaries_by_title.ipynb](salaries_by_title.ipynb)).
 
-5. Last but not least, I analyzed some of the data visually by creating a Matplotlib bar chart of 'Average Salaries by Title' ([salaries_by_title_chart.png](salaries_by_title_chart.png)). 
+5. Then I analyzed some of the data visually by creating a Matplotlib bar chart of 'Average Salaries by Title' ([salaries_by_title_chart.png](salaries_by_title_chart.png)). 
+
+<kbd><img src="QuickDBD-Employee-Diagram.png" width="430" /></kbd><kbd><img src="salaries_by_title_chart.png" width="430" /></kbd>
