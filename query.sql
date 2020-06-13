@@ -9,10 +9,8 @@ SELECT first_name, last_name, hire_date
  WHERE hire_date LIKE '1986%';
 
 -- List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name, and start and end employment dates.
-SELECT dm.dept_no,
-	   (SELECT dept_name 
-	      FROM departments d 
-	     WHERE d.dept_no=dm.dept_no),
+SELECT dm.dept_no, 
+	   d.dept_name,
 	   dm.emp_no,
 	   (SELECT last_name 
 	  	  FROM employees e 
@@ -22,7 +20,8 @@ SELECT dm.dept_no,
 	 	 WHERE e.emp_no=dm.emp_no),
 	   from_date, 
 	   to_date
-FROM dept_manager dm;
+   FROM dept_manager dm
+   JOIN departments d ON d.dept_no=dm.dept_no;
 		
 -- List the department of each employee with the following information: employee number, last name, first name, and department name.
 SELECT de.emp_no, 
@@ -35,7 +34,7 @@ SELECT de.emp_no,
 	   (SELECT dept_name 
 		  FROM departments d 
 		 WHERE d.dept_no=de.dept_no)
-FROM dept_emp de;
+   FROM dept_emp de;
 
 -- List all employees whose first name is "Hercules" and last names begin with "B."
 SELECT first_name, last_name 
